@@ -1,0 +1,12 @@
+program Demo1;
+uses Cadena, math, sysutils;
+
+var
+    cad : string;
+    cantidad : byte;
+begin
+  cad := 'aeiou';
+  CantidadDeNumeros(cad);
+  writeln(cad);
+  readln;
+end.

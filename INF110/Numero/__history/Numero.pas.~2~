@@ -1,0 +1,23 @@
+unit Numero;
+
+interface
+  function DigitoMayor(n : Cardinal): byte;
+
+implementation
+  function DigitoMayor(n : Cardinal): byte;
+  var
+    may, c, d : byte;
+   begin
+    may := 0;
+    c := 1;
+    while (n >0)and(c < 4) do
+    begin
+      d := n mod 10;
+      if (d > may) then
+       may := d;
+      n := n div 10;
+      c = c + 1;
+    end;
+     result := may;
+   end;
+end.

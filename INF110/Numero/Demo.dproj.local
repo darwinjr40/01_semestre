@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/11/29 21:02:33.000.037,C:\Users\darwin\Documents\Embarcadero\Studio\Projects\Project1.dproj=G:\11_INF110\Modulos\Demo.dproj</Transaction>
+    <Transaction>2021/11/29 21:02:44.000.158,=G:\11_INF110\Modulos\Unit1.pas</Transaction>
+    <Transaction>2021/11/29 21:03:02.000.013,G:\11_INF110\Modulos\Unit1.pas=G:\11_INF110\Modulos\Numero\Numero.pas</Transaction>
+    <Transaction>2021/11/29 21:51:05.000.516,=G:\11_INF110\Modulos\Numero\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

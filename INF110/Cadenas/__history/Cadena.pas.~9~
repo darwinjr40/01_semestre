@@ -1,0 +1,60 @@
+unit Cadena;
+
+interface
+          //valor
+procedure CantidadDeNumeros(x : String); overload;
+          //referencia
+procedure CantidadDeNumeros1(var x : String); overload;
+
+
+function ObtenerCantidadDeNumeros(x : String): byte;
+function EsDigito(caracter : char): boolean;
+function EsAbecedarioYEspacio(caracter : char): boolean;
+
+implementation
+//----------------------------------------------------------
+{CantidadDeNumeros(x = 'hola10 20')--> 2   x = 'hola10 20'
+
+}         //cad='aeiou'   x = 'aeiou' = 'abc'
+  procedure CantidadDeNumeros(x : String);
+  begin
+     x := 'abc';
+  end;
+          //x ->cad = 'aeiou' = '123'
+  procedure CantidadDeNumeros1(var x : String);
+  begin
+     x := '123';
+  end;
+//----------------------------------------------------------
+function ObtenerCantidadDeNumeros(x : String): byte;
+var
+  i,n, aux, resultado : byte;
+begin
+  i := 1;
+  n := Length(x);
+  resultado := 0;
+  while (i <= n) do begin// i esta dentro del rango de 1..N
+    aux := i;
+    while (i <= n) and (EsDigito(x[i])) do
+       i := i + 1;
+    if (aux <> i) then
+       resultado := resultado + 1;
+    i := i + 1;
+  end;
+  result := resultado;
+end;
+
+function EsDigito(caracter : char): boolean;
+const NUMEROS : set of char = ['0'..'9'];
+//const vocales = ['a','e', 'i', 'o', 'u'];
+begin
+  result := caracter in NUMEROS;
+//  result := POS(NUMEROS, CARACTER) > 0;
+end;
+
+function EsAbecedarioYEspacio(caracter : char): boolean;
+const AbecedarioYEspacio = ['A'..'Z', 'a'..'Z', 'á','é','í','ó','ú'];
+begin
+  result := caracter in AbecedarioYEspacio;
+end;
+end.

@@ -1,0 +1,13 @@
+program Demo;
+uses
+  System.SysUtils,
+  Numero in 'Numero\Numero.pas';
+
+var
+  numero : cardinal;
+begin
+  write('Ingrese un numero: ');
+  readln(numero);      //74287365
+  writeln('el digito mayor es: ' , DigitoMayorDe4Dig(numero));
+  readln;
+end.

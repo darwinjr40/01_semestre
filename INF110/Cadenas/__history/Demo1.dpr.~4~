@@ -1,0 +1,11 @@
+program Demo1;
+uses Cadena, math, sysutils;
+
+var
+    cad : string;
+    cantidad : byte;
+begin
+  cantidad := CantidadDeNumeros(cad);
+  writeln('hola mundo');
+  readln;
+end.

@@ -1,0 +1,8 @@
+program Demo;
+uses
+  System.SysUtils,
+  Numero in 'Numero\Numero.pas';
+
+begin
+
+end.

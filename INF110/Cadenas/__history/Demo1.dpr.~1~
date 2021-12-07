@@ -1,0 +1,7 @@
+program Demo1;
+uses
+  Demo in 'Demo.pas';
+
+begin
+
+end.
